@@ -5,7 +5,7 @@
 	session_start();
 	
 	if(isset($_SESSION['resName']))
-		header('location: addMenuItem.php');
+		header('location: addmenuitem.php');
 	else if (isset($_SESSION['username']))
 		header('location: menu.php');
 	
@@ -43,7 +43,7 @@
 		<br /><br />
 		<h1>Customer Login</h1>
 		<div id="custLogin">
-			<form action="custLogin.php" method="POST">
+			<form action="custlogin.php" method="POST">
 				<input type="email" class="form-control" name="email" id="resEmail" placeholder="Email*" required />
 				<input type="password" class="form-control" name="password" id="resPass" placeholder="Password*" required />
 				<div id="error_msg"><?php echo $msg ?></div>
